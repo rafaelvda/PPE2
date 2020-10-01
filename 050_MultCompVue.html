@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<meta charset="UTF-8">
+
+    <title>Liste de choses à étudier en SIO2</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css">
+</head>
+
+<body>
+<div id="mod" class="container">
+<competence titre="SLAM3" contenu="Data - Bases de données - Modélisation UML"> </competence>
+    <template slot="detail" @close="detail= false">
+        Data, Big Data, modelisation, Deviation...
+    </template>
+<competence titre="SLAM4" contenu="Composants logiciels - Développement OO - Librairies"> </competence>
+    <modal v-if="montreDetail2" @close="montreDetail2 = false">
+        Le data est un élément blabla ...
+    </modal>
+    <button @click="montreDetail2 = true">Voir détails</button>
+<competence titre="SLAM5" contenu="Solutions applicatives"> </competence>
+    <modal v-if="montreDetail3" @close="montreDetail3 = false">
+        Le data est un élément blabla ...
+    </modal>
+    <button @click="montreDetail3 = true">Voir détails</button>
+<competence titre="PPE" contenu="PPE - Laravel - Vue - Android - Agile"> </competence>
+    <modal v-if="montreDetail4" @close="montreDetail4 = false">
+        Le data est un élément blabla ...
+    </modal>
+    <button @click="montreDetail4 = true">Voir détails</button>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="050_MultCompVue.js"></script>
+</body>
+
+</html>
